@@ -6,40 +6,64 @@
     <title>엄마 생신 축하</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
             color: #333;
             text-align: center;
             padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             color: #ff6f61;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 18px;
-            margin: 20px 0;
+            font-size: 20px;
+            margin: 10px 0;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.02);
         }
         footer {
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 14px;
             color: #777;
         }
-        iframe {
-            margin-top: 20px;
-            width: 560px;
-            height: 315px;
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>엄마 생신 축하드려요!</h1>
-    <p>
-        엄마만큼 저희를 생각해 주시고 사랑해주시는 분은 없을 것 같아요.<br>
-        또 저희를 위하여 항상 애써주셔서 감사합니다.<br>
-        앞으로도 항상 웃으시면서 오래오래 사세요.<br>
-        사랑합니다!<br><br>
-        하준 올림
-    </p>
-    <iframe src="https://www.youtube.com/watch?v=_nsDTev4yCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </body>
+    <div class="container">
+        <h1>엄마 생신 축하드려요!</h1>
+        <p>
+            엄마만큼 저희를 생각해 주시고 사랑해주시는 분은 없을 것 같아요.<br>
+            또 저희를 위하여 항상 애써주셔서 감사합니다.<br>
+            앞으로도 항상 웃으시면서 오래오래 사세요.<br>
+            사랑합니다!<br><br>
+하준 올림
+        </p>
+    </div>
+</body>
 </html>
